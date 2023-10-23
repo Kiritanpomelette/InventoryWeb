@@ -1,0 +1,23 @@
+/* テーブル全体のボーダーを設定 */
+table {
+    border-collapse: collapse; /* セルのボーダーを重ねる */
+    margin: auto;
+    width: 85%;
+}
+
+/* 各セルのボーダーを設定 */
+th {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.td-btn{
+    text-align: center;
+}

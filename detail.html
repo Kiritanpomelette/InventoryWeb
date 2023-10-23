@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>詳細</title>
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/detail.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+<!--ヘッダー-->
+<header>
+    <P>在庫管理</P>
+</header>
+<!--サイドバー-->
+<div class="sidebar">
+    <button id="toIndexButton">在庫管理画面へ</button>
+    <button id="toProductsButton">商品追加画面へ</button>
+</div>
+<!--ハンバーガーメニュー-->
+<div class="hamburger-menu">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </label>
+    <div class="menu">
+        <a href="index.html">ホーム</a>
+        <a href="Syohin.html">商品追加</a>
+<!--        <button id="toIndexButton">在庫管理画面へ</button>-->
+<!--        <button id="toProductsButton">商品管理</button>-->
+    </div>
+</div>
+<!--メイン-->
+<main>
+<!--詳細画面(jsに変更箇所あり)-->
+    <h2>？？詳細画面</h2>
+    <div class="detail-in">
+        <h3>トマト(JS取得)</h3>
+        <p><img src="./img/tomato.jpg"></p>
+    </div>
+</main>
+<!--ヘッダー-->
+<footer>
+    <p>たいしはオムライス</p>
+</footer>
+<script src="./js/main.js"></script>
+</body>
+</html>

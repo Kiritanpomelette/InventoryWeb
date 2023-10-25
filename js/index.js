@@ -39,6 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
            window.location.href = 'detail.html';
         });
         //htmlの表示する場所
-        document.getElementById("test").append(element)
+        document.getElementById("Tablejs").append(element)
     }
 });

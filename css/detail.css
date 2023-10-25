@@ -1,4 +1,23 @@
 img{
-    width: 20%;
+    width: 50vh;
     height: auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-section, .info-section{
+    flex: 1; /* これにより、各セクションが等しい量のスペースを取るようになります。必要に応じて調整してください。 */
+    padding: 1em; /* スペーシングのためのパディング */
+}
+
+.info-section{
+    text-align: left;
+    font-size: 5vh;
+}
+
+.memo{
+    font-size: 5vh;
 }

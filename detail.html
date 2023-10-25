@@ -21,24 +21,36 @@
 <div class="hamburger-menu">
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
     <label for="menu-toggle" class="menu-icon">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
     </label>
     <div class="menu">
-        <a href="index.html">ホーム</a>
-        <a href="Syohin.html">商品追加</a>
-<!--        <button id="toIndexButton">在庫管理画面へ</button>-->
-<!--        <button id="toProductsButton">商品管理</button>-->
+        <button id="hm-toIndexButton">在庫管理画面へ</button>
+        <button id="hm-toProductsButton">商品追加画面へ</button>
     </div>
 </div>
 <!--メイン-->
 <main>
-<!--詳細画面(jsに変更箇所あり)-->
+<!--    メインコンテンツ(jsに変更有)-->
     <h2>？？詳細画面</h2>
     <div class="detail-in">
         <h3>トマト(JS取得)</h3>
-        <p><img src="./img/tomato.jpg"></p>
+        <div class="flex-container">
+            <div class="img-section">
+                <img src="./img/tomato.jpg" alt="商品画像">
+            </div>
+            <div class="info-section">
+                <p>現在の個数：15(js)</p>
+                <p>今日：45(js)</p>
+                <p>今週：345(js)</p>
+                <p>今月：34534(js)</p>
+            </div>
+        </div>
+        <div>
+            <P class="memo">メモ</P>
+            <!-- メモの内容のためのテキストエリアやインプットを追加するかもしれません -->
+        </div>
     </div>
 </main>
 <!--ヘッダー-->

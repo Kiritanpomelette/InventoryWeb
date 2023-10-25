@@ -21,19 +21,21 @@
 <div class="hamburger-menu">
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
     <label for="menu-toggle" class="menu-icon">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
     </label>
     <div class="menu">
-        <a href="index.html">ホーム</a>
-        <a href="Syohin.html">商品追加</a>
+        <button id="hm-toIndexButton">在庫管理画面へ</button>
+        <button id="hm-toProductsButton">商品追加画面へ</button>
     </div>
 </div>
 <!--メイン-->
 <main>
     <h2>商品追加画面</h2>
-    <p>商品追加：<input type="text">　<input type="button" value="追加"></p>
+    <label for="username">商品名:</label>
+    <input type="text" id="username" name="username">
+    <button>追加</button>
 </main>
 <!--フッター-->
 <footer>

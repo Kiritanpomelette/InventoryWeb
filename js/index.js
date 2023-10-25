@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         element.append(elament7td);
         // 画面遷移の処理
         elament7a.addEventListener('click', function (){
-           window.location.href = 'detail.html';
+           window.location.href = 'detail.html?id=' + data.id;
         });
         //htmlの表示する場所
         document.getElementById("Tablejs").append(element)

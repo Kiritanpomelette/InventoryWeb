@@ -6,39 +6,39 @@ document.addEventListener("DOMContentLoaded", function () {
         //すべてのデータをiに格納
         const data = allData[i];
         // HTMLの作成
-        const element = document.createElement("tr");
-        const elament2 = document.createElement("td");
-        const elament3 = document.createElement("td");
-        const elament4 = document.createElement("td");
-        const elament5 = document.createElement("td");
-        const elament6 = document.createElement("td");
-        const elament7td = document.createElement("td");
-        const elament7a = document.createElement("button");
-        const elament7b = document.createElement("button");
+        const trelement = document.createElement("tr");
+        const nameelament = document.createElement("td");
+        const memoelament = document.createElement("td");
+        const nownumberelament = document.createElement("td");
+        const daynumberelament = document.createElement("td");
+        const weeknumberelament = document.createElement("td");
+        const btncntelament = document.createElement("td");
+        const detailelament = document.createElement("button");
+        const editelament = document.createElement("button");
 
-        elament7a.innerText = "詳細";
-        elament7b.innerText = "編集";
+        detailelament.innerText = "詳細";
+        editelament.innerText = "編集";
         // tdにnameのデータを入れる
-        elament2.innerText = data.name;
-        elament3.innerText = data.memo;
-        elament4.innerText = data.nownumber;
-        elament5.innerText = data.daynumber;
-        elament6.innerText = data.weeknumber;
+        nameelament.innerText = data.name;
+        memoelament.innerText = data.memo;
+        nownumberelament.innerText = data.nownumber;
+        daynumberelament.innerText = data.daynumber;
+        weeknumberelament.innerText = data.weeknumber;
         // ボタンをtdに入れる
-        elament7td.append(elament7a);
-        elament7td.append(elament7b);
+        btncntelament.append(detailelament);
+        btncntelament.append(editelament);
         // trの中にtdを入れる
-        element.append(elament2);
-        element.append(elament3);
-        element.append(elament4);
-        element.append(elament5);
-        element.append(elament6);
-        element.append(elament7td);
+        trelement.append(nameelament);
+        trelement.append(memoelament);
+        trelement.append(nownumberelament);
+        trelement.append(daynumberelament);
+        trelement.append(weeknumberelament);
+        trelement.append(btncntelament);
         // 画面遷移の処理
-        elament7a.addEventListener('click', function (){
+        detailelament.addEventListener('click', function (){
            window.location.href = 'detail.html?id=' + data.id;
         });
         //htmlの表示する場所
-        document.getElementById("Tablejs").append(element)
+        document.getElementById("Tablejs").append(trelement)
     }
 });

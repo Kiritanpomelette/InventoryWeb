@@ -33,22 +33,21 @@
 <!--メイン-->
 <main>
 <!--    メインコンテンツ(jsに変更有)-->
-    <h2>？？詳細画面</h2>
+    <h2 id="name"></h2>
     <div class="detail-in">
-        <h3>トマト(JS取得)</h3>
         <div class="flex-container">
             <div class="img-section">
                 <img src="./img/tomato.jpg" alt="商品画像">
             </div>
             <div class="info-section">
-                <p>現在の個数：15(js)</p>
-                <p>今日：45(js)</p>
-                <p>今週：345(js)</p>
-                <p>今月：34534(js)</p>
+                <p id="nownumber"></p>
+                <p id="daynumber"></p>
+                <p id="weeknumber"></p>
+                <p id="monthnumber"></p>
             </div>
         </div>
         <div>
-            <P class="memo">メモ</P>
+            <P id="memo" class="memo"></P>
             <!-- メモの内容のためのテキストエリアやインプットを追加するかもしれません -->
         </div>
     </div>
@@ -58,5 +57,7 @@
     <p>きりたんぽオムレツ</p>
 </footer>
 <script src="./js/main.js"></script>
+<script src="./js/detail.js"></script>
+<script src="./js/inventory.js"></script>
 </body>
 </html>

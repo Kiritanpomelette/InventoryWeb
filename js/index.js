@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const trElement = document.createElement("tr");
         const nameElement = document.createElement("td");
         const memoElement = document.createElement("td");
-        const nownumberElement = document.createElement("td");
-        const daynumberElement = document.createElement("td");
-        const weeknumberElement = document.createElement("td");
-        const btncntElement = document.createElement("td");
+        const nowNumberElement = document.createElement("td");
+        const dayNumberElement = document.createElement("td");
+        const weekNumberElement = document.createElement("td");
+        const btnCntElement = document.createElement("td");
         const detailElement = document.createElement("button");
         const editElement = document.createElement("button");
 
@@ -21,19 +21,19 @@ document.addEventListener("DOMContentLoaded", function () {
         // tdにnameのデータを入れる
         nameElement.innerText = data.name;
         memoElement.innerText = data.memo;
-        nownumberElement.innerText = data.nownumber;
-        daynumberElement.innerText = data.daynumber;
-        weeknumberElement.innerText = data.weeknumber;
+        nowNumberElement.innerText = data.nownumber;
+        dayNumberElement.innerText = data.daynumber;
+        weekNumberElement.innerText = data.weeknumber;
         // ボタンをtdに入れる
-        btncntElement.append(detailElement);
-        btncntElement.append(editElement);
+        btnCntElement.append(detailElement);
+        btnCntElement.append(editElement);
         // trの中にtdを入れる
         trElement.append(nameElement);
         trElement.append(memoElement);
-        trElement.append(nownumberElement);
-        trElement.append(daynumberElement);
-        trElement.append(weeknumberElement);
-        trElement.append(btncntElement);
+        trElement.append(nowNumberElement);
+        trElement.append(dayNumberElement);
+        trElement.append(weekNumberElement);
+        trElement.append(btnCntElement);
         // 画面遷移の処理
         detailElement.addEventListener('click', function (){
            window.location.href = 'detail.html?id=' + data.id;

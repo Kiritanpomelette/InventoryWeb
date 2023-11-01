@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>編集画面</title>
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+<!--ヘッダー-->
+<header>
+    <P>在庫管理</P>
+</header>
+<!--サイドバー-->
+<div class="sidebar">
+    <button id="toIndexButton">在庫管理画面へ</button>
+    <button id="toProductsButton">商品追加画面へ</button>
+</div>
+<!--ハンバーガーメニュー-->
+<div class="hamburger-menu">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </label>
+    <div class="menu">
+        <button id="hm-toIndexButton">在庫管理画面へ</button>
+        <button id="hm-toProductsButton">商品追加画面へ</button>
+    </div>
+</div>
+<!--メイン-->
+<main>
+    <h2>本日の使用個数の変更</h2>
+    <form id="form-use-number">
+        <label>
+            <input type="number" id="use-number">
+        </label>
+        <button type="submit" id="update-btn">更新</button>
+    </form>
+</main>
+<!--ヘッダー-->
+<footer>
+    <p>きりたんぽオムレツ</p>
+</footer>
+<script src="./js/main.js"></script>
+<script src="./js/edit.js"></script>
+<script src="js/inventory.js"></script>
+</body>
+</html>

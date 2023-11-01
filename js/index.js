@@ -35,8 +35,13 @@ document.addEventListener("DOMContentLoaded", function () {
         trElement.append(weekNumberElement);
         trElement.append(btnCntElement);
         // 画面遷移の処理
+        // 詳細画面への遷移
         detailElement.addEventListener('click', function (){
            window.location.href = 'detail.html?id=' + data.id;
+        });
+        // 編集画面への遷移
+        editElement.addEventListener('click', function (){
+            window.location.href = 'edit.html?id=' + data.id;
         });
         //htmlの表示する場所
         document.getElementById("Tablejs").append(trElement)

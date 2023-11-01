@@ -16,6 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const detailElement = document.createElement("button");
         const editElement = document.createElement("button");
 
+        // クラスの付与
+        btnCntElement.className = "btn-cnt";
+
         detailElement.innerText = "詳細";
         editElement.innerText = "編集";
         // tdにnameのデータを入れる

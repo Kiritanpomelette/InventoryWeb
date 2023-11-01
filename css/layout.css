@@ -172,13 +172,6 @@ footer p{
         z-index: 1;
     }
 
-    .menu a {
-        color: white;
-        display: block;
-        padding: 10px;
-        text-decoration: none;
-    }
-
     #menu-toggle:checked+.menu-icon+.menu {
         height: auto;
         padding: 10px 0;
@@ -188,8 +181,18 @@ footer p{
         display: none;
     }
 
-    a {
-        width: fit-content;
-        height: fit-content;
+    .hamburger-menu button {
+        color: white;
+        background-color: #7F8FA6;
+        padding: 10px;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 4%;
+    }
+
+    .hamburger-menu button:hover {
+        background-color: #ffffff;
     }
 }

@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         detailElement.innerText = "詳細";
         editElement.innerText = "編集";
-        // tdにnameのデータを入れる
+        // tdにデータを入れる
         nameElement.innerText = data.name;
         memoElement.innerText = data.memo;
         nowNumberElement.innerText = data.nownumber;
@@ -35,8 +35,13 @@ document.addEventListener("DOMContentLoaded", function () {
         trElement.append(weekNumberElement);
         trElement.append(btnCntElement);
         // 画面遷移の処理
+        // 詳細画面
         detailElement.addEventListener('click', function (){
            window.location.href = 'detail.html?id=' + data.id;
+        });
+        // 編集画面
+        editElement.addEventListener('click', function (){ // ここをeditElementに変更
+            window.location.href = 'edit.html?id=' + data.id; // ここに = を追加
         });
         //htmlの表示する場所
         document.getElementById("Tablejs").append(trElement)

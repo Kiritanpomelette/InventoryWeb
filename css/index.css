@@ -18,6 +18,10 @@ td {
     text-align: left;
 }
 
-.td-btn{
+.btn-cnt{
     text-align: center;
+}
+
+.btn-cnt button{
+    margin-right: 5px;
 }

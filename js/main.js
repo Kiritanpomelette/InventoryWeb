@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = 'index.html';
     });
     productsButton.addEventListener('click', function() {
-        window.location.href = 'Syohin.html';
+        window.location.href = 'syohin.html';
     });
     // webMB画面遷移(ハンバーガーメニュー)
     hmindexButton.addEventListener('click', function (){

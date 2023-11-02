@@ -1,5 +1,6 @@
 img{
-    width: 50vh;
+    max-width: 100%;
+    /*width: 50vh;*/
     height: auto;
 }
 
@@ -10,14 +11,26 @@ img{
 
 .img-section, .info-section{
     flex: 1; /* これにより、各セクションが等しい量のスペースを取るようになります。必要に応じて調整してください。 */
-    padding: 1em; /* スペーシングのためのパディング */
+    padding: 2vh; /* スペーシングのためのパディング */
 }
 
 .info-section{
     text-align: left;
     font-size: 5vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p{
+    font-size: 2.8vh;
 }
 
 .memo{
-    font-size: 5vh;
+    font-size: 2.8vh;
+}
+
+#name{
+    font-weight: bold;
+    font-size: 4vh;
 }

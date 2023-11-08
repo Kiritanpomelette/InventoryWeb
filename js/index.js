@@ -40,9 +40,9 @@ document.addEventListener("DOMContentLoaded", function () {
             // tdにデータを入れる
             nameElement.innerText = data.name;
             memoElement.innerText = data.memo;
-            nowNumberElement.innerText = data.nownumber; // キー名が正しいか確認してください
-            dayNumberElement.innerText = data.daynumber; // キー名が正しいか確認してください
-            weekNumberElement.innerText = data.weeknumber; // キー名が正しいか確認してください
+            nowNumberElement.innerText = data.nownumber;
+            dayNumberElement.innerText = data.daynumber;
+            weekNumberElement.innerText = data.weeknumber;
             // ボタンをtdに入れる
             btnCntElement.appendChild(detailElement);
             btnCntElement.appendChild(editElement);

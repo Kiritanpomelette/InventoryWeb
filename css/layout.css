@@ -48,12 +48,8 @@ header {
     z-index: 99;
 }
 
-.hamburger-menu {
-    display: block; /* 常に表示する */
-    position: absolute; /* ヘッダー内で絶対位置指定 */
-    top: 0;
-    right: 10px; /* 右側に寄せる */
-    z-index: 101; /* ヘッダーより上 */
+.hamburger-menu{
+    display: none;
 }
 
 footer {
@@ -138,6 +134,14 @@ footer p{
         position: sticky;
         bottom: 0;
         z-index: 100;
+    }
+
+    .hamburger-menu {
+        display: block; /* 常に表示する */
+        position: absolute; /* ヘッダー内で絶対位置指定 */
+        top: 0;
+        right: 10px; /* 右側に寄せる */
+        z-index: 101; /* ヘッダーより上 */
     }
 
     .menu-icon {

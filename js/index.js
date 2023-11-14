@@ -31,6 +31,31 @@ document.addEventListener("DOMContentLoaded", function () {
             const btnCntElement = document.createElement("td");
             const detailElement = document.createElement("button");
             const editElement = document.createElement("button");
+            function readAndWrite(url,element){
+                fetch(url)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        element.innerText = data.total;
+                    })
+                    .catch(error => {
+                        console.error('Fetching error:', error);
+                    });
+            }
+            if(data.id === 1) {
+                readAndWrite('https://n3.miyayu.xyz/InventoryServer-0.0.1-SNAPSHOT-plain/treasurer/allStatistics?productId=' + data.id, nowNumberElement);
+                readAndWrite('https://n3.miyayu.xyz/InventoryServer-0.0.1-SNAPSHOT-plain/treasurer/dailyStatistics?productId=' + data.id, dayNumberElement);
+                readAndWrite('https://n3.miyayu.xyz/InventoryServer-0.0.1-SNAPSHOT-plain/treasurer/weeklyStatistics?productId=' + data.id, weekNumberElement);
+            }else{ //仮
+                nowNumberElement.innerText = 0;
+                dayNumberElement.innerText = 0;
+                weekNumberElement.innerText = 0;
+            }
+
 
             // クラスの付与
             btnCntElement.className = "btn-cnt";
